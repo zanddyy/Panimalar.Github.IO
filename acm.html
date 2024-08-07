@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Todo App</title>
+            <link rel="icon" href="D:\college sem-5\acm\ToDoList-master\assets\favicon.png" type="image/x-icon"/>
+        <link rel="stylesheet" href="stylesheet.css" />
+    </head>
+    <body>
+        <div class="todo-app">
+            <p id="datetime"></p>
+
+<script>
+  // Get current date and time
+  var now = new Date();
+  var datetime = now.toLocaleString();
+
+  // Insert date and time into HTML
+  document.getElementById("datetime").innerHTML = datetime;
+</script>
+            <h1>📋TO-DO LIST✅</h1>
+            <form action="" id="task-form">
+                <input
+                    type="text"
+                    id="task-input"
+                    placeholder="Enter a New Task"
+                    />
+                <button class="btn" type="submit" value="Add">Add
+                </button>
+            </form>
+            <ul id="task-list">
+                <!-- <li class="checked">Task 1</li>
+                <li class="checked">Task 2</li>
+                <li>Task 3</li> -->
+            </ul>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+
